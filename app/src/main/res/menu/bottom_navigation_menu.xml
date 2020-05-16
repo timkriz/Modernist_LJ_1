@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_button_menu"
+        android:icon="@drawable/ic_home_icon_24dp"
+        android:title="Home button menu"/>
+
+    <item
+        android:id="@+id/map_button_menu"
+        android:icon="@drawable/ic_map_icon_24dp"
+        android:title="Map button menu" />
+
+    <item
+        android:id="@+id/general_button_menu"
+        android:icon="@drawable/ic_general_icon_24dp"
+        android:title="General button menu" />
+</menu>
