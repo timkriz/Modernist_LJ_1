@@ -8,12 +8,17 @@
 
     <TextView
         android:id="@+id/textViewDetail"
-        android:layout_width="wrap_content"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
-        android:text="@string/name_of_detail_activity"
+        android:text="@string/republic_square"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="10dp"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -30,5 +35,38 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
+
+    <ScrollView
+        android:id="@+id/detail_content_scroll"
+        android:layout_width="325dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetail">
+
+        <LinearLayout
+            android:id="@+id/detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_detail">
+
+            <TextView
+                android:id="@+id/architect_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="@string/architect_name_1"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_republic_square" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
