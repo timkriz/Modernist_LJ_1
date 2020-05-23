@@ -15,10 +15,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:paddingTop="10dp"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textColor="#000000"/>
-
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -62,10 +60,33 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/text_building"
+                android:id="@+id/text_building_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text_republic_square" />
+                android:text="@string/text_republic_square_1" />
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/building_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/republic_square_image"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_building_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_republic_square_2" />
+
         </LinearLayout>
     </ScrollView>
 

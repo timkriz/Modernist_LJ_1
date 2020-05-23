@@ -5,11 +5,16 @@
     <string name="name_of_general_activity">3. General</string>
     <string name="name_of_detail_activity">4. Detail View</string>
     <string name="architect_name_1">ARCHITECT: Edvard Ravnikar</string>
-    <string name="text_republic_square">
+
+    <string name="text_republic_square_1">
         Republic Square or Square of the Republic (Slovene: Trg republike), at first named Revolution Square, is the largest square in Ljubljana, the capital of Slovenia.
-        \n\nWith its modernist design by architect Edvard Ravnikar, Trg republike square is the symbolic heart of Slovenia’s statehood. The square is surrounded by the Slovenian parliament building, the futuristic triangular towers of the TR3 and Ljubljanska Banka buildings, with the Cankarjev Dom congress and cultural centre behind them, and the Maximarket department store.
-        \n\nThe square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.
+        \n\nWith its modernist design by architect Edvard Ravnikar, Trg republike square is the symbolic heart of Slovenia’s statehood. The square is surrounded by the Slovenian parliament building, the futuristic triangular towers of the TR3 and Ljubljanska Banka buildings, with the Cankarjev Dom congress.
+        \n
+    </string>
+    <string name="text_republic_square_2">
+        \nThe square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.
         \n\nThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih. The interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.
     </string>
+
     <string name="republic_square">REPUBLIC SQUARE</string>
 </resources>
