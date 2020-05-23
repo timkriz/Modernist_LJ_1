@@ -11,44 +11,28 @@
         android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:text="@string/republic_square"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="10dp"
+        android:layout_marginTop="15dp"
         android:textSize="30sp"
         android:textColor="#000000"/>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="28dp"
-        android:background="@drawable/bottom_navigation_background"
-        android:elevation="8dp"
-        app:itemIconTint="@drawable/bottom_navigation_color_selector"
-        app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />
 
     <ScrollView
         android:id="@+id/detail_content_scroll"
         android:layout_width="325dp"
-        android:layout_height="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="480dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDetail">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDetail"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/layout_detail">
 
         <LinearLayout
             android:id="@+id/detail_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/layout_detail">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/architect_name"
@@ -89,5 +73,21 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bottom_navigation_background"
+        android:elevation="8dp"
+        app:itemIconTint="@drawable/bottom_navigation_color_selector"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
