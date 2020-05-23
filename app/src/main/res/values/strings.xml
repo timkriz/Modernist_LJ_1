@@ -3,4 +3,5 @@
     <string name="name_of_main_activity">1. Main Activity</string>
     <string name="name_of_map_activity">2. Map</string>
     <string name="name_of_general_activity">3. General</string>
+    <string name="name_of_detail_activity">4. Detail View</string>
 </resources>

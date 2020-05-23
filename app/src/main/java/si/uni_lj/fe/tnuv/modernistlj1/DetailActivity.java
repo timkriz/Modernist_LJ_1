@@ -6,22 +6,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class GeneralActivity extends AppCompatActivity {
+public class DetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general);
+        setContentView(R.layout.activity_detail);
 
         //Initialize and assign bottom navigation variable
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         //Set home selected
-        navigation.setSelectedItemId(R.id.general_button_menu);
+        navigation.setSelectedItemId(R.id.home_button_menu);
         //Perform ItemSelectedListener
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -34,6 +32,7 @@ public class GeneralActivity extends AppCompatActivity {
                         startMapActivity();
                         return true;
                     case R.id.general_button_menu:
+                        startGeneralActivity();
                         return true;
                 }
                 return false;
@@ -43,15 +42,21 @@ public class GeneralActivity extends AppCompatActivity {
 
     /** Called when the user clicks for HOME tab */
     public void startHomeActivity() {
-        Intent intentHome = new Intent(GeneralActivity.this, MainActivity.class);
+        Intent intentHome = new Intent(DetailActivity.this, MainActivity.class);
         overridePendingTransition(0,0);
         startActivity(intentHome);
     }
-
     /** Called when the user clicks for MAP tab */
     public void startMapActivity() {
-        Intent intentMap = new Intent(GeneralActivity.this, MapActivity.class);
+        Intent intentMap = new Intent(DetailActivity.this, MapActivity.class);
         //overridePendingTransition(0,0);
         startActivity(intentMap);
+    }
+
+    /** Called when the user clicks for GENERAL tab */
+    public void startGeneralActivity() {
+        Intent intentGeneral = new Intent(DetailActivity.this, GeneralActivity.class);
+        //overridePendingTransition(0,0);
+        startActivity(intentGeneral);
     }
 }

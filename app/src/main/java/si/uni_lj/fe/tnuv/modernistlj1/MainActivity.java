@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -39,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // to kasneje izbrisi (zaenkrat dodan le gumb za lazji dostop do DetailActivity)
+        Button open_detail = (Button) findViewById(R.id.open_detail);
+        open_detail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDetail();
+            }
+        });
     }
 
     @Override
@@ -76,10 +85,17 @@ public class MainActivity extends AppCompatActivity {
         //overridePendingTransition(0,0);
         startActivity(intentMap);
     }
+
     /** Called when the user clicks for GENERAL tab */
     public void startGeneralActivity() {
         Intent intentGeneral = new Intent(MainActivity.this, GeneralActivity.class);
         //overridePendingTransition(0,0);
         startActivity(intentGeneral);
+    }
+
+    // to kasneje izbrisi
+    public void openDetail(){
+        Intent intentDetail = new Intent(this, DetailActivity.class);
+        startActivity(intentDetail);
     }
 }
