@@ -2,7 +2,7 @@
     <string name="app_name">Modernist LJ 1</string>
     <string name="name_of_main_activity">1. Main Activity</string>
     <string name="name_of_map_activity">2. Map</string>
-    <string name="name_of_general_activity">3. General</string>
+    <string name="name_of_general_activity">MODERNISM IN LJUBLJANA</string>
     <string name="name_of_detail_activity">4. Detail View</string>
     <string name="architect_name_1">ARCHITECT: Edvard Ravnikar</string>
 
@@ -15,6 +15,16 @@
         \nThe square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.
         \n\nThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih. The interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.
     </string>
-
     <string name="republic_square">REPUBLIC SQUARE</string>
+
+    <string name="text_modernism_in_lj">
+        At the beginning of the 1960s, residential neighbourhood planning played a key role in the larger urban planning scheme of Ljubljana. In 1965, the General Urban Plan of Ljubljana established neighbourhoods as the central organizing principle underlying Ljubljana\'s spatial planning policy, and became the reference tool according to which further major enlargements of the city were organized.
+        \n\nThe residential neighbourhood model emerged as an answer to the first big housing estates built after World War II. These estates were sited alongside factories and were characterized by the repetition of a single type of long and low apartment block, which made them uniform in appearance and unappealing to the residents. The residential neighbourhood planning method came to Slovenia via Sweden. It was based on the work of Clarence Perry, an American who in his 1920 Regional Plan for New York proposed building neighbourhoods for 5,000 residents, and included criteria like a pedestrian walkway and an elementary school at the centre of each. Following World War II this model was adopted in England and the Nordic countries, from where it was then introduced to Slovenia.
+        \n\nThe first residential neighbourhood studies for Ljubljana were produced in the 1950s in the studio of Professor Edvard Ravnikar at Ljubljana University’s Faculty of Architecture. These studies encompassed the technical and sociological sides of housing developments, from construction, materials and industrial construction methods and technology to planning and design of open public space. Urban planners paid considerable attention to the distances between schools and apartment buildings, and even maintained that school grids serve as the framework around which neighbourhoods were to be structured.
+        \n\nOne particular project proved key for the further development of Ljubljana\'s neighbourhoods – one developed in Ravnikar\'s studio by Majda Dobravec, Janez Lajovic, Janja Lap and Mitja Jernejec. They designed a residential neighbourhood for 5,000 residents divided into residential blocks for 300 to 1,000 residents and organized around a central area. Central areas included shops and service establishments, schools, day care centres and sports playgrounds. Residential blocks were further divided into communities with children\'s playgrounds as their central points. A neighbourhood includes different types of housing, from apartment buildings to terraced houses, and has extensive green areas. Its central area is typically emphasized by high-rise apartment buildings and is sited along a major arterial route with a bus stop nearby. The Bežigrajska soseska 6 (BS 6) neighbourhood, between Dunajska, Šarhova, Pohorskega bataljona and Hubadova Streets was the first real-life on-site test of this theoretical model, followed by all bigger residential neighbourhoods developed in Ljubljana up until the 1980s.
+    </string>
+    <string name="text_architects">ARCHITECTS</string>
+    <string name="edvard_ravnikar">EDVARD RAVNIKAR</string>
+    <string name="ilija_arnautovic">ILIJA ARNAUTOVIĆ</string>
+    <string name="viktor_pust">VIKTOR PUST</string>
 </resources>
