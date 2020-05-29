@@ -8,10 +8,15 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    public static int vrsta_gumba = 1;
+    // 1 - republic square
+    // 2 - cankar centre
+    // 3 - ferant garden
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +45,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // to kasneje izbrisi (zaenkrat dodan le gumb za lazji dostop do DetailActivity)
-        Button open_detail = (Button) findViewById(R.id.open_detail);
-        open_detail.setOnClickListener(new View.OnClickListener() {
+        // BUTTONS
+        // 1 - republic square
+        Button open_rep_sq = (Button) findViewById(R.id.open_republic_square);
+        open_rep_sq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                vrsta_gumba = 1;
                 openDetail();
             }
         });
+        // 2 - cankar centre
+        Button open_cankar = (Button) findViewById(R.id.open_cankar_centre);
+        open_cankar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vrsta_gumba = 2;
+                openDetail();
+            }
+        });
+        // 3 - ferant garden
+        Button open_ferant = (Button) findViewById(R.id.open_ferant_garden);
+        open_ferant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vrsta_gumba = 3;
+                openDetail();
+            }
+        });
+
     }
 
     @Override
@@ -93,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentGeneral);
     }
 
-    // to kasneje izbrisi
+    /** Called when the user clicks on ANY BUTTON in the main menu - one building selected */
     public void openDetail(){
         Intent intentDetail = new Intent(this, DetailActivity.class);
         startActivity(intentDetail);

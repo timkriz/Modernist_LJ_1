@@ -4,8 +4,9 @@
     <string name="name_of_map_activity">2. Map</string>
     <string name="name_of_general_activity">MODERNISM IN LJUBLJANA</string>
     <string name="name_of_detail_activity">4. Detail View</string>
-    <string name="architect_name_1">ARCHITECT: Edvard Ravnikar</string>
 
+    <string name="republic_square">REPUBLIC SQUARE</string>
+    <string name="edvard_ravnikar_small">ARCHITECT: Edvard Ravnikar</string>
     <string name="text_republic_square_1">
         Republic Square or Square of the Republic (Slovene: Trg republike), at first named Revolution Square, is the largest square in Ljubljana, the capital of Slovenia.
         \n\nWith its modernist design by architect Edvard Ravnikar, Trg republike square is the symbolic heart of Slovenia’s statehood. The square is surrounded by the Slovenian parliament building, the futuristic triangular towers of the TR3 and Ljubljanska Banka buildings, with the Cankarjev Dom congress.
@@ -15,7 +16,25 @@
         \nThe square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.
         \n\nThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih. The interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.
     </string>
-    <string name="republic_square">REPUBLIC SQUARE</string>
+
+    <string name="cankar_centre">CANKAR CENTRE</string>
+    <string name="text_cankar_centre_1">
+        The Cankar Centre, also known as Cankarjev dom or Cankar Hall, is the largest Slovenian convention, congress and culture center. The building was designed by the architect Edvard Ravnikar and was built at the southern edge of Republic Square in Ljubljana between 1977 and 1982. Construction was funded entirely by the Socialist Republic of Slovenia.
+        \n
+    </string>
+    <string name="text_cankar_centre_2">
+        \nThe centre has four halls named after Slovene artists: Gallus Hall (named after the late-Renaissance composer Jacobus Gallus), Linhart Hall (named after the Enlightenment erudite and playwright Anton Tomaž Linhart), Kosovel Hall (named after the Expressionist poet Srečko Kosovel), and Štih Hall (named after the literary critic Bojan Štih). The Cankar Centre also has a large foyer where events are held (artistic performances, dances, book fairs, etc.). In front of the building stands a monument to Ivan Cankar, designed in 1982 by the sculptor Slavko Tihec.
+    </string>
+
+    <string name="ferant_garden">FERANT GARDEN</string>
+    <string name="text_ferant_garden_1">
+        The business and residential complex Ferant Garden demonstrates that Prof. Edvard Ravnikar was not only the most visible and prominent representative of Modernism in Slovenia, but was also its most unrelenting critic.
+        \n
+    </string>
+    <string name="text_ferant_garden_2">
+        \nThe design of Ferant Garden is an expression of Ravnikar’s critique of the block-of-flats residential construction that accompanied the growth and modernisation of cities in the mid-20th century, and a critique of the principles of modern urban planning that failed to recognise the social importance of open public spaces, streets and squares, or the programme diversity of the city parterre.
+    </string>
+
 
     <string name="text_modernism_in_lj">
         At the beginning of the 1960s, residential neighbourhood planning played a key role in the larger urban planning scheme of Ljubljana. In 1965, the General Urban Plan of Ljubljana established neighbourhoods as the central organizing principle underlying Ljubljana\'s spatial planning policy, and became the reference tool according to which further major enlargements of the city were organized.
@@ -27,4 +46,5 @@
     <string name="edvard_ravnikar">EDVARD RAVNIKAR</string>
     <string name="ilija_arnautovic">ILIJA ARNAUTOVIĆ</string>
     <string name="viktor_pust">VIKTOR PUST</string>
+
 </resources>
