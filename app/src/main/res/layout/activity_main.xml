@@ -6,25 +6,106 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Title -->
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_of_main_activity"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"
+        android:fontFamily="@font/proxima_regular"
+        android:textColor="@color/colorText"
+        android:textSize="40dp"/>
 
-    <Button
-        android:id="@+id/open_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="open detail view activity"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/carousel_id"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintWidth_percent="0.9"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="40dp">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/description_main_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_regular"
+                android:justificationMode="inter_word"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorText"
+                android:textSize="18dp"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/main_window_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description_main_id"
+                app:layout_constraintHorizontal_bias="0.05"
+                android:buttonTint="#555555"
+                android:fontFamily="@font/proxima_bold"
+                android:padding="10dp"
+                android:text="VISITED"></androidx.appcompat.widget.AppCompatCheckBox>
+
+            <Button
+                    android:id="@+id/main_window_button_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_window_checkbox"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    android:text="MORE"
+                    android:fontFamily="@font/proxima_bold"
+                    android:padding="10dp"
+                    ></Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Main Window Image -->
+    <ImageView
+        android:id="@+id/main_window_photo_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:src="@drawable/tr_sketch"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toTopOf="@id/cardView" />
+
+    <!-- Carousel-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/carousel_id"
+        android:layout_centerInParent="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clipToPadding="false"
+        android:layout_marginBottom="16dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintHeight_percent="0.2">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <!-- Bottom navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -32,9 +113,9 @@
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
         android:layout_marginBottom="28dp"
-        android:background="@drawable/bottom_navigation_background"
+        android:background="@drawable/bottom_nav_background"
         android:elevation="8dp"
-        app:itemIconTint="@drawable/bottom_navigation_color_selector"
+        app:itemIconTint="@drawable/bottom_nav_colors"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

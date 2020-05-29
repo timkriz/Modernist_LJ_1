@@ -6,15 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".GeneralActivity">
 
+    <!-- Title -->
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_of_general_activity"
+        android:id="@+id/title_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:text="@string/text_general"
+        android:fontFamily="@font/proxima_regular"
+        android:textColor="@color/colorText"
+        android:textSize="40dp"/>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/carousel_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_id"
+        app:layout_constraintWidth_percent="0.9">
+
+        <ScrollView
+            android:id="@+id/general_content_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_general"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/text_modernism_in_lj"
+                android:textSize="15dp" />
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title2_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_bold"
+        android:padding="10dp"
+        android:text="@string/text_architects"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/carousel_id"
+        app:layout_constraintTop_toBottomOf="@id/cardView"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/carousel_id"
+        android:layout_centerInParent="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clipToPadding="false"
+        android:layout_marginBottom="16dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@id/title2_id">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!-- Bottom navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -22,12 +88,13 @@
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
         android:layout_marginBottom="28dp"
-        android:background="@drawable/bottom_navigation_background"
+        android:background="@drawable/bottom_nav_background"
         android:elevation="8dp"
-        app:itemIconTint="@drawable/bottom_navigation_color_selector"
+        app:itemIconTint="@drawable/bottom_nav_colors"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

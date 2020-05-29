@@ -26,7 +26,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.google.android.material:material:1.0.0' //dodano
+    implementation 'com.google.android.material:material:1.1.0' //dodano
     implementation 'androidx.cardview:cardview:1.0.0' // dodano (za slike-round corners)
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
@@ -34,4 +34,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'//dodano za slider okenca
 }

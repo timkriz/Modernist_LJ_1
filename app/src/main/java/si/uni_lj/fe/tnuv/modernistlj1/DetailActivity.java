@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -16,6 +18,13 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        String name_of_building = getIntent().getExtras().getString("name_of_building");
+
+        final TextView detailTitle = (TextView) findViewById(R.id.title_id);
+        detailTitle.setText(name_of_building);
+
+        /* zaenkrat brez spodnje navigacije ker je problem pri vračanju in ugasanju :S */
+        /*
         //Initialize and assign bottom navigation variable
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         //Set home selected
@@ -37,7 +46,7 @@ public class DetailActivity extends AppCompatActivity {
                 }
                 return false;
             }
-        });
+        });*/
     }
 
     /** Called when the user clicks for HOME tab */

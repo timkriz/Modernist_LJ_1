@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MapActivity">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name_of_map_activity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!-- bottom navigation bar-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -23,9 +14,9 @@
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
         android:layout_marginBottom="28dp"
-        android:background="@drawable/bottom_navigation_background"
+        android:background="@drawable/bottom_nav_background"
         android:elevation="8dp"
-        app:itemIconTint="@drawable/bottom_navigation_color_selector"
+        app:itemIconTint="@drawable/bottom_nav_colors"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -36,12 +27,14 @@
     <!--Google maps fragment-->
     <FrameLayout
         android:id="@+id/map_container"
-        android:layout_width="325dp"
-        android:layout_height="500dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.8"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toTopOf="parent">
 
         <fragment
             android:id="@+id/mapFragmentID"
@@ -57,8 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/round_corners"
-            android:orientation="vertical" >
-        </LinearLayout>
+            android:orientation="vertical"></LinearLayout>
 
     </FrameLayout>
 
