@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
             JSONArray jArray = new JSONArray(readJSONFromAsset());
             for (int i = 0; i < jArray.length(); ++i) {
                 String name = jArray.getJSONObject(i).getString("Name"); // name
-                String image_file_name = jArray.getJSONObject(i).getString("Image_name"); // image_file_name
-                String description_main = jArray.getJSONObject(i).getString("Desription_main");
+                String image_file_name = jArray.getJSONObject(i).getString("Image_name_main"); // image_file_name
+                String description_main = jArray.getJSONObject(i).getString("Description_main");
                 int resource_id_image = getResources().getIdentifier(image_file_name, "drawable", getPackageName()); // get resource id
                 models.add(new ModelObject(i,name, description_main, resource_id_image)); // pass id and name to ModelCarousel class
             }
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
     public String readJSONFromAsset() {
         String json = null;
         try {
-            InputStream is = getAssets().open("list_of_buildings.json");
+            InputStream is = getAssets().open(getString(R.string.JSON_file_name));
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);

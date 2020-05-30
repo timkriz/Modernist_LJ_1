@@ -1,110 +1,122 @@
 [
   {
     "Name":"REPUBLIC SQUARE",
-    "Desription_main":"Republic Square or Square of the Republic (Slovene: Trg republike), at first named Revolution Square, is the largest square in Ljubljana. With its modernist design by architect Edvard Ravnikar, Trg republike square is heart of Slovenia’s statehood.",
-    "Desription_detail":" \\nThe square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.\n        \\n\\nThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih. The interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.\n    ",
+    "Description_main":"Republic Square or Square of the Republic (Slovene: Trg republike), at first named Revolution Square, is the largest square in Ljubljana. With its modernist design by architect Edvard Ravnikar, Trg republike square is heart of Slovenia’s statehood.",
+    "Description_detail":"The square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.\n        \\n\\nThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih. The interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.\n    ",
     "Architect":"Edvard Ravnikar",
     "Year": "1976",
     "Adress": "Trg republike",
-    "Image_name": "image_carousel_republic_square"
+    "Image_name_main": "image_carousel_republic_square",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"ASTRA",
-    "Desription_main":"Republic Square or Square of the Republic (Slovene: Trg republike), at first named Revolution Square, is the largest square in Ljubljana, the capital of Slovenia. With its modernist design by architect Edvard Ravnikar, Trg republike square is the symbolic heart of Slovenia’s statehood.",
-    "Desription_detail":" \\nThe square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.\n        \\n\\nThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih. The interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.\n    ",
+    "Description_main":"Republic Square or Square of the Republic (Slovene: Trg republike), at first named Revolution Square, is the largest square in Ljubljana, the capital of Slovenia. With its modernist design by architect Edvard Ravnikar, Trg republike square is the symbolic heart of Slovenia’s statehood.",
+    "Description_detail":" \\nThe square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.\n        \\n\\nThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih. The interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.\n    ",
     "Architect":"Savin Sever",
     "Year": "1970",
     "Adress": "Dunajska cesta 47-53",
-    "Image_name": "image_carousel_astra"
+    "Image_name_main": "image_carousel_astra",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"BEŽIGRAD NEIGHBOURHOOD",
-    "Desription_main":"The Bežigrajska soseska 3 (BS 3) neighbourhood\ncovers an area 800 metres long and 250 metres\nwide and is one of the largest neighbourhoods in\nLjubljana. Its complex, hyper-urban structure was\ndesigned by Mitja Jernejec, with architectural design\nby Ilija Arnautović. ",
-    "Desription_detail":" Like many other neighbourhoods\nin Ljubljana, the construction of BS 3 was never\ncompleted in full. Despite this fact, however, it\nboasts many interesting features that contribute to\nits special character. According to the initial design,\nthere should have been two enormous apartment\nblocks constructed on its eastern border. Instead\nthese were replaced with tower blocks with pointed\ncaps at the top, which are the identifying feature of\nthe neighbourhood today. Tower blocks are posi- tioned in two clusters along Vojkova Street, while the\ninterior core of the neighbourhood evolves into long\nrows of low-rise apartment buildings with access\nroads running underneath. The friendly character\nof the neighbourhood is accentuated by generous\noutdoor spaces – green areas, parks, squares,\nalleys and footpaths. They are designed as green\nalleys separating apartments from each other, with\nplaygrounds, rest areas and recreation islands lined\nup along them.",
+    "Description_main":"The Bežigrajska soseska 3 (BS 3) neighbourhood\ncovers an area 800 metres long and 250 metres\nwide and is one of the largest neighbourhoods in\nLjubljana. Its complex, hyper-urban structure was\ndesigned by Mitja Jernejec, with architectural design\nby Ilija Arnautović. ",
+    "Description_detail":" Like many other neighbourhoods\nin Ljubljana, the construction of BS 3 was never\ncompleted in full. Despite this fact, however, it\nboasts many interesting features that contribute to\nits special character. According to the initial design,\nthere should have been two enormous apartment\nblocks constructed on its eastern border. Instead\nthese were replaced with tower blocks with pointed\ncaps at the top, which are the identifying feature of\nthe neighbourhood today. Tower blocks are posi- tioned in two clusters along Vojkova Street, while the\ninterior core of the neighbourhood evolves into long\nrows of low-rise apartment buildings with access\nroads running underneath. The friendly character\nof the neighbourhood is accentuated by generous\noutdoor spaces – green areas, parks, squares,\nalleys and footpaths. They are designed as green\nalleys separating apartments from each other, with\nplaygrounds, rest areas and recreation islands lined\nup along them.",
     "Architect":"Ilija Arnautović",
     "Year": "1971",
     "Adress": "Reboljeva",
-    "Image_name": "image_carousel_bezigrajska_soseska"
+    "Image_name_main": "image_carousel_bezigrajska_soseska",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"CANKARJEV DOM",
-    "Desription_main":"\t\nCankarjev dom - največji slovenski kulturni in kongresni center - je zadnja stavba, ki je bila zgrajena na Trgu Republike. Njen obsežni program - različno velike gledališke, koncertne, kino in seminarske dvorane - je pogojeval odločitev arhitekta, da stavbo delno vkoplje v teren.",
-    "Desription_detail":"Na ta način je Edvard Ravnikar ohranil obstoječo kompozicijo in razmerja Trga. Večina dvoran se zato nahaja pod zemljo. Sosledje preddverij pred dvoranami v različnih etažah povezuje Cankarjev dom z nivoji Trga in okoliškimi ulicami: velika sprejemna dvorana v pritličju - preddverje največje Gallusove dvorane - povezuje Trg republike in Prešernovo cesto, preddverje v prvi kletni etaži pa povezuje stavbo s pasažo Maximarketa.\nStavbno telo je oblikovano razgibano, sledeč prostorski organizaciji notranjosti. Enotni fasadni ovoj iz belih marmornih plošč daje stavbi umirjen in homogen videz.",
+    "Description_main":"\t\nCankarjev dom - največji slovenski kulturni in kongresni center - je zadnja stavba, ki je bila zgrajena na Trgu Republike. Njen obsežni program - različno velike gledališke, koncertne, kino in seminarske dvorane - je pogojeval odločitev arhitekta, da stavbo delno vkoplje v teren.",
+    "Description_detail":"Na ta način je Edvard Ravnikar ohranil obstoječo kompozicijo in razmerja Trga. Večina dvoran se zato nahaja pod zemljo. Sosledje preddverij pred dvoranami v različnih etažah povezuje Cankarjev dom z nivoji Trga in okoliškimi ulicami: velika sprejemna dvorana v pritličju - preddverje največje Gallusove dvorane - povezuje Trg republike in Prešernovo cesto, preddverje v prvi kletni etaži pa povezuje stavbo s pasažo Maximarketa.\nStavbno telo je oblikovano razgibano, sledeč prostorski organizaciji notranjosti. Enotni fasadni ovoj iz belih marmornih plošč daje stavbi umirjen in homogen videz.",
     "Architect":"Edvard Ravnikar",
     "Year": "1983",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_cankarjev"
+    "Image_name_main": "image_carousel_cankarjev",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"FERANT GARDENS",
-    "Desription_main":"",
-    "Desription_detail":"",
+    "Description_main":"",
+    "Description_detail":"",
     "Architect":"Edvard Ravnikar",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_ferantovi_vrtovi"
+    "Image_name_main": "image_carousel_ferantovi_vrtovi",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"GR",
-    "Desription_main":"",
-    "Desription_detail":"",
+    "Description_main":"",
+    "Description_detail":"",
     "Architect":"",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_gospodarsko_raztavisce"
+    "Image_name_main": "image_carousel_gospodarsko_raztavisce",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"KANARČEK",
-    "Desription_main":"",
-    "Desription_detail":"",
+    "Description_main":"",
+    "Description_detail":"",
     "Architect":"",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_kanarcek"
+    "Image_name_main": "image_carousel_kanarcek",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"KOSEZE NEIGHBOURHOOD",
-    "Desription_main":"",
-    "Desription_detail":"",
+    "Description_main":"",
+    "Description_detail":"",
     "Architect":"",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_koseze"
+    "Image_name_main": "image_carousel_koseze",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"NAMA",
-    "Desription_main":"",
-    "Desription_detail":"",
+    "Description_main":"",
+    "Description_detail":"",
     "Architect":"",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_nama"
+    "Image_name_main": "image_carousel_nama",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"PETROL",
-    "Desription_main":"",
-    "Desription_detail":"",
+    "Description_main":"",
+    "Description_detail":"",
     "Architect":"",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_petrol"
+    "Image_name_main": "image_carousel_petrol",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"SAVSKO NEIGHBOURHOOD",
-    "Desription_main":"",
-    "Desription_detail":"",
+    "Description_main":"",
+    "Description_detail":"",
     "Architect":"",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_savsko_naselje"
+    "Image_name_main": "image_carousel_savsko_naselje",
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
   },
   {
     "Name":"ŠIŠENSKA SOSESKA 6",
-    "Desription_main":"",
-    "Desription_detail":"",
+    "Description_main":"",
+    "Description_detail":"",
     "Architect":"",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
-    "Image_name": "image_carousel_sisenksa_soseska_6"
+    "Image_name_main": "image_carousel_sisenksa_soseska_6",
+    "Image_names" : ["image_carousel_republic_square"]
   }
 ]

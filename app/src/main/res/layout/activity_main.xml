@@ -46,7 +46,7 @@
                 android:layout_margin="20dp"
                 android:textColor="@color/colorText"
                 android:textSize="18dp"
-                app:layout_constraintTop_toTopOf="parent"></TextView>
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/main_window_checkbox"
@@ -59,7 +59,7 @@
                 android:buttonTint="#555555"
                 android:fontFamily="@font/proxima_bold"
                 android:padding="10dp"
-                android:text="VISITED"></androidx.appcompat.widget.AppCompatCheckBox>
+                android:text="@string/visited_text"/>
 
             <Button
                     android:id="@+id/main_window_button_id"
@@ -69,10 +69,9 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/main_window_checkbox"
                     app:layout_constraintHorizontal_bias="0.05"
-                    android:text="MORE"
+                    android:text="@string/more_text"
                     android:fontFamily="@font/proxima_bold"
-                    android:padding="10dp"
-                    ></Button>
+                    android:padding="10dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

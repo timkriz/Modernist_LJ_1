@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">Modernist LJ 1</string>
     <string name="text_general">GENERAL</string>
-    <string name="architect_name_1">ARCHITECT: Edvard Ravnikar</string>
-    <string name="arhitect_pretext">ARHITECT : </string>
 
     <string name="text_republic_square_1">
         Republic Square or Square of the Republic (Slovene: Trg republike), at first named Revolution Square, is the largest square in Ljubljana, the capital of Slovenia.
@@ -39,7 +37,15 @@
     <string name="CHECKBOX_KEY_9">PetrolVisited</string>
     <string name="CHECKBOX_KEY_10">SavskoVisited</string>
     <string name="CHECKBOX_KEY_11">SisenskaVisited</string>
+
     <string name="home_button_menu">Home button menu</string>
     <string name="map_button_menu">Map button menu</string>
     <string name="general_button_menu">General button menu</string>
+
+    <string name="arhitect_pretext">ARHITECT : </string>
+    <string name="year_pretext">"YEAR : "</string>>
+    <string name="year_built0">1976</string>
+    <string name="more_text">MORE</string>
+    <string name="visited_text">VISITED</string>
+    <string name="JSON_file_name">list_of_buildings.json</string>
 </resources>
