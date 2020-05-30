@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,7 +45,9 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
                 String image_file_name = jArray.getJSONObject(i).getString("Image_name_main"); // image_file_name
                 String description_main = jArray.getJSONObject(i).getString("Description_main");
                 int resource_id_image = getResources().getIdentifier(image_file_name, "drawable", getPackageName()); // get resource id
-                models.add(new ModelObject(i,name, description_main, resource_id_image)); // pass id and name to ModelCarousel class
+                String sketched_image_file_name = jArray.getJSONObject(i).getString("Image_name_sketch"); // image_file_name
+                int resource_id_image_sketched = getResources().getIdentifier(sketched_image_file_name, "drawable", getPackageName()); // get resource id
+                models.add(new ModelObject(i,name, description_main, resource_id_image, resource_id_image_sketched)); // pass id and name to ModelCarousel class
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -56,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
         title.setText(models.get(0).getTitle());
         TextView description_main = findViewById(R.id.description_main_id);
         description_main.setText(models.get(0).getDescription_main());
+        ImageView sketched_image = findViewById(R.id.main_window_photo_id);
+        sketched_image.setImageResource(models.get(0).getImage_sketched());
 
         /* BUTTON THAT OPENS DETAIL - GUMB NA DETAIL POGLED */
         Button open_rep_sq = (Button) findViewById(R.id.main_window_button_id);
@@ -166,7 +171,10 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
         visited_checkbox.setChecked(is_it_checked);
         visited_checkbox.setOnClickListener(new CarouselOnClickListener(key, sharedPrefs));
 
-        /** NEW BUTTON LINK **/
+        ImageView sketched_image = findViewById(R.id.main_window_photo_id);
+        sketched_image.setImageResource(models.get(position).getImage_sketched());
+
+        /* NEW BUTTON LINK */
         Button open_rep_sq = (Button) findViewById(R.id.main_window_button_id);
         open_rep_sq.setOnClickListener(new DetailButtonOnClickListener(models.get(position).getTitle(), this));
     }

@@ -31,7 +31,7 @@ public class GeneralActivity extends AppCompatActivity {
             int resId = getResources().getIdentifier("arhitect_" + i, "string", getPackageName());
             getString(resId);
             int resource_id_image = getResources().getIdentifier("carousel_arhitects_" + i, "drawable", getPackageName());
-            models.add(new ModelObject(0, getString(resId), "", resource_id_image));
+            models.add(new ModelObject(0, getString(resId), "", resource_id_image, 0));
         }
         AdapterCarousel adapter = new AdapterCarousel(this, models);
         recyclerView.setAdapter(adapter);

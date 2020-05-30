@@ -79,7 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:elevation="10dp"
-        android:src="@drawable/tr_sketch"
+        android:src="@drawable/sketch_tr"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.5"

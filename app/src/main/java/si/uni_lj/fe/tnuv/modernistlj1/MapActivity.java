@@ -150,7 +150,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 if (focus_on_this_lat !=0 && focus_on_this_lon !=0) {
                     Log.i("bleh", String.valueOf(focus_on_this_lat));
                     Log.i("bleh", String.valueOf(focus_on_this_lon));
-                    mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(focus_on_this_lat,focus_on_this_lon), 15.0f));
+                    mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(focus_on_this_lat,focus_on_this_lon), 17.0f));
                     focus_on_this_lat = 0;
                     focus_on_this_lat = 0;
                 }

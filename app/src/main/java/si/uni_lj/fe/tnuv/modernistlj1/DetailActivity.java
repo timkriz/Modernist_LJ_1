@@ -83,7 +83,7 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public boolean checkLayoutParams(RecyclerView.LayoutParams lp) {
                 // force height of viewHolder here, this will override layout_height from xml
-                lp.width = getWidth() / 2;
+                lp.width = 2* getWidth() / 3;
                 return true;
             }
         });
