@@ -7,7 +7,9 @@
     "Year": "1976",
     "Adress": "Trg republike",
     "Image_name_main": "image_carousel_republic_square",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_republic_square_1"],
+    "Lat" : "46.050884",
+    "Lon" : "14.500411"
   },
   {
     "Name":"ASTRA",
@@ -17,7 +19,9 @@
     "Year": "1970",
     "Adress": "Dunajska cesta 47-53",
     "Image_name_main": "image_carousel_astra",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.065257",
+    "Lon" : "14.508859"
   },
   {
     "Name":"BEŽIGRAD NEIGHBOURHOOD",
@@ -27,7 +31,9 @@
     "Year": "1971",
     "Adress": "Reboljeva",
     "Image_name_main": "image_carousel_bezigrajska_soseska",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.081062",
+    "Lon" : "14.519840"
   },
   {
     "Name":"CANKARJEV DOM",
@@ -37,7 +43,9 @@
     "Year": "1983",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_cankarjev",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.049866",
+    "Lon" : "14.499219"
   },
   {
     "Name":"FERANT GARDENS",
@@ -47,7 +55,9 @@
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_ferantovi_vrtovi",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.048124",
+    "Lon" : "14.501300"
   },
   {
     "Name":"GR",
@@ -57,17 +67,21 @@
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_gospodarsko_raztavisce",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.061956",
+    "Lon" : "14.508154"
   },
   {
     "Name":"KANARČEK",
     "Description_main":"",
     "Description_detail":"",
-    "Architect":"",
+    "Architect":"Edvard Ravnikar",
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_kanarcek",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.051224",
+    "Lon" : "14.510872"
   },
   {
     "Name":"KOSEZE NEIGHBOURHOOD",
@@ -77,7 +91,9 @@
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_koseze",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.072100",
+    "Lon" : "14.472844"
   },
   {
     "Name":"NAMA",
@@ -87,7 +103,9 @@
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_nama",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.052128",
+    "Lon" : "14.503112"
   },
   {
     "Name":"PETROL",
@@ -97,7 +115,9 @@
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_petrol",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.057924",
+    "Lon" : " 14.504018"
   },
   {
     "Name":"SAVSKO NEIGHBOURHOOD",
@@ -107,7 +127,9 @@
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_savsko_naselje",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"]
+    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Lat" : "46.065124",
+    "Lon" : "14.520564"
   },
   {
     "Name":"ŠIŠENSKA SOSESKA 6",
@@ -117,6 +139,8 @@
     "Year": "1975",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_sisenksa_soseska_6",
-    "Image_names" : ["image_carousel_republic_square"]
+    "Image_names" : ["image_carousel_republic_square"],
+    "Lat" : "46.071091",
+    "Lon" : "14.480415"
   }
 ]

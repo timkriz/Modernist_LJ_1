@@ -12,8 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:padding="20dp"
         android:fontFamily="@font/proxima_regular"
@@ -108,10 +106,11 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintHeight_percent="0.08"
         android:background="@drawable/bottom_nav_background"
         android:elevation="8dp"
         app:itemIconTint="@drawable/bottom_nav_colors"
@@ -119,6 +118,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />
+        app:menu="@menu/bottom_navigation_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

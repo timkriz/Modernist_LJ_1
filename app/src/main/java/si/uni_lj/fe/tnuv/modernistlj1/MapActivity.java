@@ -13,6 +13,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
@@ -20,14 +21,48 @@ import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.io.IOException;
+import java.io.InputStream;
+
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
-    private static final String TAG = "napaka";
+    private static final String TAG = "ojej";
+    private double[] lat = new double[20];
+    private double[] lon = new double[20];
+    private double focus_on_this_lat = 0;
+    private double focus_on_this_lon = 0;
+    private String[] names_of_buildings = new String[20];
     private GoogleMap mGoogleMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+
+        if (getIntent().hasExtra("lat") && getIntent().hasExtra("lon")) {
+            focus_on_this_lat = getIntent().getExtras().getDouble("lat");
+            focus_on_this_lon = getIntent().getExtras().getDouble("lon");
+
+            Log.i("focus_on_this_lat: ", String.valueOf(focus_on_this_lat));
+        }
+
+        /* GET LAT AND LON values from JSON */
+        try {
+            JSONArray jArray = new JSONArray(readJSONFromAsset());
+            for (int i = 0; i < jArray.length(); ++i) {
+                double read_lat = jArray.getJSONObject(i).getDouble("Lat"); // lat
+                double read_lon = jArray.getJSONObject(i).getDouble("Lon"); // lat
+                String read_name = jArray.getJSONObject(i).getString("Name"); // lat
+                lat[i] = read_lat;
+                lon[i] = read_lon;
+                names_of_buildings[i] = read_name;
+
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         //Initialize and assign bottom navigation variable
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
@@ -104,23 +139,52 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 mGoogleMap.setMaxZoomPreference(20.0f);
 
                 //Markers
-                /*mGoogleMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(10, 10))
-                        .title("Hello world"));*/
+                for (int i = 0; i < lat.length; ++i) {
+                    LatLng position = new LatLng(lat[i], lon[i]);
+                    mGoogleMap.addMarker(new MarkerOptions().position(position).title(names_of_buildings[i])
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                }
 
-                //Remebering position when resuming
-                MapStateManager mgr = new MapStateManager(this);
-                CameraPosition position = mgr.getSavedCameraPosition();
-                if (position != null) {
-                    CameraUpdate update = CameraUpdateFactory.newCameraPosition(position);
-                    //Log.e("ERROR", "entering Resume State");
-                    mGoogleMap.moveCamera(update);
-                    mGoogleMap.setMapType(mgr.getSavedMapType());
+                // Focus on position of building from detail view
+
+                if (focus_on_this_lat !=0 && focus_on_this_lon !=0) {
+                    Log.i("bleh", String.valueOf(focus_on_this_lat));
+                    Log.i("bleh", String.valueOf(focus_on_this_lon));
+                    mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(focus_on_this_lat,focus_on_this_lon), 15.0f));
+                    focus_on_this_lat = 0;
+                    focus_on_this_lat = 0;
+                }
+                else {
+                    //Remebering position when resuming
+                    MapStateManager mgr = new MapStateManager(this);
+                    CameraPosition position = mgr.getSavedCameraPosition();
+                    if (position != null) {
+                        CameraUpdate update = CameraUpdateFactory.newCameraPosition(position);
+                        //Log.e("ERROR", "entering Resume State");
+                        mGoogleMap.moveCamera(update);
+                        mGoogleMap.setMapType(mgr.getSavedMapType());
+                    }
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
             Log.e("ERROR", "GOOGLE MAPS NOT LOADED");
         }
+    }
+    /* READ JSON FILE IN ASSETS FOLDER */
+    public String readJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open(getString(R.string.JSON_file_name));
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
     }
 }

@@ -7,19 +7,19 @@
     tools:context=".DetailActivity">
 
     <!-- Title -->
+
     <TextView
         android:id="@+id/title_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="20dp"
+        app:layout_constraintHeight_percent="0.1"
         android:fontFamily="@font/proxima_regular"
         android:textColor="@color/colorText"
-        android:textSize="40dp"/>
-
+        android:padding="20dp"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        />
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
@@ -43,12 +43,20 @@
             android:layout_marginBottom="15dp"
             android:layout_weight="1">
 
+
             <LinearLayout
                 android:id="@+id/detail_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
+                <!-- Button -->
+                <Button
+                    android:id="@+id/button_open_in_map_id"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima_bold"
+                    android:text="OPEN IN MAP"/>
                 <!-- Name of arhitect -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -98,6 +106,7 @@
                         android:paddingLeft="5dp"
                         android:textSize="17sp"/>
                 </LinearLayout>
+
                 <TextView
                     android:id="@+id/text_detail_building"
                     android:layout_width="match_parent"
@@ -116,6 +125,7 @@
 
         </ScrollView>
     </androidx.cardview.widget.CardView>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@id/carousel_id"

@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +40,10 @@ public class DetailActivity extends AppCompatActivity {
         JSONObject objekt = findBuildinginJSON(name_of_building);
         JSONArray image_names_json;
         int[] images = {0};
+        double lat = 0;
+        double lon = 0;
 
+        /* GET DATA FROM JSON - dobi podatke iz jsona */
         try {
             read_detail_text = objekt.getString("Description_detail");
             arhitects_name = objekt.getString("Architect");
@@ -51,6 +55,8 @@ public class DetailActivity extends AppCompatActivity {
                 int resource_id_image = getResources().getIdentifier(name_of_image, "drawable", getPackageName()); // get resource id
                 images[i] = resource_id_image;
             }
+            lat = objekt.getDouble("Lat");
+            lon = objekt.getDouble("Lon");
         } catch (JSONException e) {
             Toast.makeText(this, "Unable to find info about " + name_of_building, Toast.LENGTH_SHORT).show();
             e.printStackTrace();
@@ -81,6 +87,11 @@ public class DetailActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        /* BUTTON THAT LINKS TO MAP - GUMB KI ODPRE ZEMLJEVID */
+
+        Button open_map_button = (Button) findViewById(R.id.button_open_in_map_id);
+        open_map_button.setOnClickListener(new MapButtonOnClickListener(this, lat, lon));
 
         /* zaenkrat brez spodnje navigacije ker je problem pri vračanju in ugasanju :S */
         /*
