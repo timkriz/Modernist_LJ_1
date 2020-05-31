@@ -1,10 +1,10 @@
 [
   {
     "Name":"REPUBLIC SQUARE",
-    "Description_main":"Republic Square or Square of the Republic (Slovene: Trg republike), at first named Revolution Square, is the largest square in Ljubljana. With its modernist design by architect Edvard Ravnikar, Trg republike square is heart of Slovenia’s statehood.",
-    "Description_detail":"The square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent. A group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.\n\t\tThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih.\n\t\tThe interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.",
+    "Description_main":"Republic Square, at first named Revolution Square, is the largest square in Ljubljana. With its modernist design by architect Edvard Ravnikar, Trg republike square is heart of Slovenia’s statehood.",
+    "Description_detail":"The square is a remarkable example of socialist modernist architecture. Plečnik’s pupil Edvard Ravnikar designed it in 1960 as the centre of modern Ljubljana, on a site previously occupied by the extensive gardens of the Ursuline convent.\n\t\tA group of architects led by Ravnikar worked on the square from 1962 until 1982. The vast central section of the square has hosted numerous historic events, including the declaration of Slovenia’s independence on 25 June 1991. The square is lined by a number of monuments from the period of socialist Yugoslavia. The largest of them is the Revolution monument by sculptor Drago Tršar, which was unveiled in 1975.\n\t\tThe Slovenian parliament building was built between 1954 and 1959 to plans by the architect Vinko Glanz as the seat of the People’s Assembly. A notable feature of the building is its two-storey main entrance, surrounded by sculptures symbolically depicting workers engaged in various occupations, the work of sculptors Zdenko Kalin and Karl Putrih.\n\t\tThe interior of the parliament building is adorned by paintings and murals by numerous Slovene artists. Notable among them is the mural by Slavko Pengov that extends right around the lobby of the Great Hall and depicts the history of the Slovene nation.",
     "Architect":"Edvard Ravnikar",
-    "Year": "1976",
+    "Year": "1974",
     "Adress": "Trg republike",
     "Image_name_main": "image_carousel_republic_square",
     "Image_names" : ["image_republic_square_1", "image_republic_square_2", "image_republic_square_3", "image_republic_square_4", "image_republic_square_5", "image_republic_square_6"],
@@ -14,7 +14,7 @@
   },
   {
     "Name":"ASTRA",
-    "Description_main":"The Astra shopping and office centre is a continuation of an ambitious urban planner's vision of a business centre along the main city thoroughfare, beyond the railway line, that was initiated with the construction of the Commercial Exhibition Centre (Gospodarsko Razstavišče) in the 1950s.",
+    "Description_main":"The Astra shopping and office centre is a continuation of an ambitious urban planner's vision of a business centre along the main city thoroughfare, beyond the railway line, that was initiated in the 1950s.",
     "Description_detail":"The Astra Center is following the new urban regulation which creates a more metropolitan northern city entrance road. The project includes two lower shopping premises and two high-rises that occupy a whole side of a city block with an emphasized corner.\n\t\tThe towers have glass facade, commercial part is surrounded by panels of artificial stone. Building facades are articulated with respect to the internal structure of space and structure, which was one of the design principles of the architect Sever. Towers construction is formed by corner walls, amongst which are positioned four offices. Towers have double glazed window what allows ventilation, shading and protection from noise. This was the first building in Slovenia that was designed with a double-layered glass facade and an interspace enabling ventilation.",
     "Architect":"Savin Sever",
     "Year": "1970",
@@ -31,7 +31,7 @@
     "Description_detail":"Like many other neighbourhoods in Ljubljana, the construction of BS 3 was never completed in full. Despite this fact, however, it boasts many interesting features that contribute to its special character. According to the initial design, there should have been two enormous apartment blocks constructed on its eastern border. Instead these were replaced with tower blocks with pointed caps at the top, which are the identifying feature of the neighbourhood today.\n\t\tTower blocks are positioned in two clusters along Vojkova Street, while the interior core of the neighbourhood evolves into long rows of low-rise apartment buildings with access roads running underneath. The friendly character of the neighbourhood is accentuated by generous outdoor spaces – green areas, parks, squares, alleys and footpaths. They are designed as green alleys separating apartments from each other, with playgrounds, rest areas and recreation islands lined up along them.",
     "Architect":"Ilija Arnautović",
     "Year": "1971",
-    "Adress": "Reboljeva",
+    "Adress": "Reboljevaa, Maroltova, Trebinjska and Puhova Streets",
     "Image_name_main": "image_carousel_bezigrajska_soseska",
     "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
     "Image_name_sketch": "sketch_bezigrajska",
@@ -40,8 +40,8 @@
   },
   {
     "Name":"CANKARJEV DOM",
-    "Description_main":"Cankarjev dom - največji slovenski kulturni in kongresni center - je zadnja stavba, ki je bila zgrajena na Trgu Republike. Njen obsežni program - različno velike gledališke, koncertne, kino in seminarske dvorane - je pogojeval odločitev arhitekta, da stavbo delno vkoplje v teren.",
-    "Description_detail":"Na ta način je Edvard Ravnikar ohranil obstoječo kompozicijo in razmerja Trga. Večina dvoran se zato nahaja pod zemljo. Sosledje preddverij pred dvoranami v različnih etažah povezuje Cankarjev dom z nivoji Trga in okoliškimi ulicami: velika sprejemna dvorana v pritličju - preddverje največje Gallusove dvorane - povezuje Trg republike in Prešernovo cesto, preddverje v prvi kletni etaži pa povezuje stavbo s pasažo Maximarketa.\nStavbno telo je oblikovano razgibano, sledeč prostorski organizaciji notranjosti. Enotni fasadni ovoj iz belih marmornih plošč daje stavbi umirjen in homogen videz.",
+    "Description_main":"The Cankarjev dom cultural and congress centre, is the largest Slovenian convention, congress and culture center.",
+    "Description_detail":"The Cankarjev dom cultural and congress centre, Slovenia's largest cultural institution, was built between 1982 and 1983 to designs by the architect Edvard Ravnikar.\n\t\tIts numerous halls, connected by a large foyer on the upper floor and a smaller one on the lower floor, are used as venues for concerts, theatre performances, film screenings and conferences.\n\t\tThe Cankarjev dom was a subsequent addition to Ravnikar's original plans for the Trg republike square. In order to prevent the building from being too tall, most of the halls were built under the ground. The above-the-ground part consists of three wings, a taller one in the middle and two lower ones on the sides. The façade is covered in white stone and ornamented with decorative folds on the sides.\n\t\tThe monument standing in front of the building, shaped in the form of a multi-layer metal cube depicting the face of Ivan Cankar, the greatest Slovenian writer, was sculpted by Slavko Tihec.",
     "Architect":"Edvard Ravnikar",
     "Year": "1983",
     "Adress": "Prešernova cesta 10",
@@ -52,8 +52,8 @@
     "Lon" : "14.499219"
   },
   {
-    "Name":"FERANT GARDENS",
-    "Description_main":"The Ferant Gardens housing complex was designed by Edvard Ravnikar as a cluster of housing units to complement the existing body of apartments in the city centre, and to lend the southern part of the city a more metropolitan character.",
+    "Name":"FERANT GARDEN",
+    "Description_main":"The Ferant Garden business and residential complex was designed by Edvard Ravnikar as a cluster of housing units to complement the existing body of apartments in the city centre, and to lend the southern part of the city a more metropolitan character.",
     "Description_detail":"New buildings in conjunction with older houses along Rimska Street form a residential island with several commercial establishments on the ground floors.\n\t\tThe housing complex is situated on the site of an ancient Roman forum. Architect Edvard Ravnikar incorporated this into the design of individual buildings, while at the same time displaying the remains of the Roman Emona (the first incarnation of present day Ljubljana) in the Jakopič Gallery on Slovenska Street.\n\t\tApartments run through the building, facing both the street as well as the courtyard. The courtyard is designed as an open public park with garages hidden underneath. Belts of balconies and windows alternating on the façade together with a combination of brick and concrete lend the buildings a special character.\n\t\tThey are further brought together into a unified whole by certain architectural details, like the characteristic brick corner “stitches” and concrete flower boxes, which residents have planted with abundant greenery.",
     "Architect":"Edvard Ravnikar",
     "Year": "1975",
@@ -66,7 +66,7 @@
   },
   {
     "Name":"GOSPODARSKO RAZSTAVIŠČE",
-    "Description_main":"The Exhibition and Convention Centre (Slovene: Gospodarsko razstavišče) in Ljubljana is a venue for organising domestic and international fairs as well as other events.",
+    "Description_main":"The Exhibition and Convention Centre (Gospodarsko razstavišče) in Ljubljana is a venue for organising domestic and international fairs as well as other events.",
     "Description_detail":"The building complex stands in the Bežigrad District, between Vienna Street (Dunajska cesta, Vilhar Street (Vilharjeva cesta), and Robba Street (Robbova ulica), north of the Ljubljana railway station.\n\t\tIt is operated by the Ljubljana Exhibition and Convention Centre company. The basic mission of the company is the organization of various events where the exhibitors and visitors meet and cooperate creatively.\n\t\tThe center was designed by architects Ilija Arnautović, Milan Mihelič, Branko Simčič, and Marko Šlajmer in the 1950s and the 1960s. In 1954 the Communist Party of Yugoslavia decided that its 1955 7th Congress would take place in the new exhibition centre, and the construction was sped up accordingly.\n\t\tTo make room for the new exhibition center, many of the old structures were destroyed. It was built on top of the former Saint Christopher's Cemetery and two churches were removed for the construction: the old Saint Christopher's Church (a Baroque structure) and Saints Cyril and Methodius Church (designed by Jože Plečnik).",
     "Architect":"Ilija Arnautović, Boris Gaberščik, Milan Mihelič, Branko Simčič",
     "Year": "1959",
@@ -109,7 +109,7 @@
     "Description_detail":"The seven-storey original building of the NAMA store in Ljubljana, originally known as \"Service Hall\" (Dom službe), was completed in 1939 upon plans by the architect Franjo Lušičić. It was built in the modern style by the construction company owned by Josip Dedek.\n\t\tIn 1965, a new building, work by the architects Bogdan Fink and Miloš Lapajne, was added to it at its southern side. In 2002, at the restoration, its facade was redesigned in glass, despite the opposition of the original authors.",
     "Architect":"Bogdan Fink, Miloš Lapajne",
     "Year": "1965",
-    "Adress": "Tomšičeva ulica 1",
+    "Adress": "Tomšičeva ulica 2",
     "Image_name_main": "image_carousel_nama",
     "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
     "Image_name_sketch": "sketch_astra",
@@ -118,8 +118,8 @@
   },
   {
     "Name":"PETROL STATION",
-    "Description_main":"Perhaps the most ambitious addition to the \"Petrol\" brand series of service stations in Ljubljana was a creation by Slovene architect Edvard Ravnikar, who is often considered the most famous and influential of all Yugoslav-era architects in Slovenia.",
-    "Description_detail":"Built literally right across the street from Mihelič's station at Tivolska 46 that was constructed two years earlier, Ravnikar's structure consists of three identical umbrella canopies created of a thin concrete facade. All three are interconnected, stretching out over nearly 60 meters, and are designed in a swooping space-age fashion that gives them an indelibly sleek impression of speed and motion.\n\t\tThis complex continues to operate into the present day as a \"Petrol\" brand service station, with the structure appearing almost exactly as it did when it was first unveiled in 1970. The architecture of this structure has become so iconic in Ljubljana that one architecture firm in the city named \"Multiplan\" has proposed a new service station concept to \"Petrol\" which is directly inspired by Ravnikar's design.",
+    "Description_main":"Between 1950 and 1970, four unique petrol stations were created across the city of Ljubljana. These petrol stations were of a pioneering design that combined the material sciences and engineering innovations. ",
+    "Description_detail":"Perhaps the most ambitious addition to the \"Petrol\" brand series of service stations in Ljubljana was a creation by Slovene architect Edvard Ravnikar, who is often considered the most famous and influential of all Yugoslav-era architects in Slovenia.\n\t\tBuilt literally right across the street from Mihelič's station at Tivolska 46 that was constructed two years earlier, Ravnikar's structure consists of three identical umbrella canopies created of a thin concrete facade. All three are interconnected, stretching out over nearly 60 meters, and are designed in a swooping space-age fashion that gives them an indelibly sleek impression of speed and motion.\n\t\tThis complex continues to operate into the present day as a \"Petrol\" brand service station, with the structure appearing almost exactly as it did when it was first unveiled in 1970. The architecture of this structure has become so iconic in Ljubljana that one architecture firm in the city named \"Multiplan\" has proposed a new service station concept to \"Petrol\" which is directly inspired by Ravnikar's design.",
     "Architect":"Edvard Ravnikar",
     "Year": "1969",
     "Adress": "Tivolska 43",
