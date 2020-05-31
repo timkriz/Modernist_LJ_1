@@ -20,7 +20,7 @@
     "Year": "1970",
     "Adress": "Dunajska cesta 47-53",
     "Image_name_main": "image_carousel_astra",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_astra_1", "image_astra_2", "image_astra_3", "image_astra_4", "image_astra_5", "image_astra_6"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.065257",
     "Lon" : "14.508859"
@@ -33,7 +33,7 @@
     "Year": "1971",
     "Adress": "Reboljevaa, Maroltova, Trebinjska and Puhova Streets",
     "Image_name_main": "image_carousel_bezigrajska_soseska",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_bezigrajska_soseska_1", "image_bezigrajska_soseska_2", "image_bezigrajska_soseska_3", "image_bezigrajska_soseska_4", "image_bezigrajska_soseska_5"],
     "Image_name_sketch": "sketch_bezigrajska",
     "Lat" : "46.081062",
     "Lon" : "14.519840"
@@ -46,7 +46,7 @@
     "Year": "1983",
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_cankarjev",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_cankarjev_dom_1", "image_cankarjev_dom_2", "image_cankarjev_dom_3", "image_cankarjev_dom_4", "image_cankarjev_dom_5"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.049866",
     "Lon" : "14.499219"
@@ -59,7 +59,7 @@
     "Year": "1975",
     "Adress": "Between Gregoričičeva, Rimska, Igriška and Slovenska Streets",
     "Image_name_main": "image_carousel_ferantovi_vrtovi",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_ferant_1", "image_ferant_2", "image_ferant_3", "image_ferant_4", "image_ferant_5", "image_ferant_6"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.048124",
     "Lon" : "14.501300"
@@ -72,7 +72,7 @@
     "Year": "1959",
     "Adress": "Trg 7. kongresa ZKJ",
     "Image_name_main": "image_carousel_gospodarsko_raztavisce",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_gospodarsko_razstavisce_1", "image_gospodarsko_razstavisce_2", "image_gospodarsko_razstavisce_3", "image_gospodarsko_razstavisce_4", "image_gospodarsko_razstavisce_5"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.061956",
     "Lon" : "14.508154"
@@ -85,7 +85,7 @@
     "Year": "1961",
     "Adress": "Kopitarjeva ulica 2",
     "Image_name_main": "image_carousel_kanarcek",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_kanarcek_1", "image_kanarcek_2", "image_kanarcek_3", "image_kanarcek_4", "image_kanarcek_5"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.051224",
     "Lon" : "14.510872"
@@ -98,7 +98,7 @@
     "Year": "1968",
     "Adress": "Ul. Bratov Učakar Street",
     "Image_name_main": "image_carousel_koseze",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_koseze_1", "image_koseze_2", "image_koseze_3", "image_koseze_4", "image_koseze_5"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.072100",
     "Lon" : "14.472844"
@@ -111,7 +111,7 @@
     "Year": "1965",
     "Adress": "Tomšičeva ulica 2",
     "Image_name_main": "image_carousel_nama",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_nama_1", "image_nama_2", "image_nama_3"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.052128",
     "Lon" : "14.503112"
@@ -119,12 +119,12 @@
   {
     "Name":"PETROL STATION",
     "Description_main":"Between 1950 and 1970, four unique petrol stations were created across the city of Ljubljana. These petrol stations were of a pioneering design that combined the material sciences and engineering innovations. ",
-    "Description_detail":"Perhaps the most ambitious addition to the \"Petrol\" brand series of service stations in Ljubljana was a creation by Slovene architect Edvard Ravnikar, who is often considered the most famous and influential of all Yugoslav-era architects in Slovenia.\n\t\tBuilt literally right across the street from Mihelič's station at Tivolska 46 that was constructed two years earlier, Ravnikar's structure consists of three identical umbrella canopies created of a thin concrete facade. All three are interconnected, stretching out over nearly 60 meters, and are designed in a swooping space-age fashion that gives them an indelibly sleek impression of speed and motion.\n\t\tThis complex continues to operate into the present day as a \"Petrol\" brand service station, with the structure appearing almost exactly as it did when it was first unveiled in 1970. The architecture of this structure has become so iconic in Ljubljana that one architecture firm in the city named \"Multiplan\" has proposed a new service station concept to \"Petrol\" which is directly inspired by Ravnikar's design.",
-    "Architect":"Edvard Ravnikar",
-    "Year": "1969",
+    "Description_detail":"All four petrol stations were created by the Slovenia-based oil company named \"Petrol\". They combined the advances of material sciences and engineering innovations with the modernist architectural aesthetics of a style of regional building design called \"Slovene Structuralism\". Out of this combination came a series of mushroom-shaped concrete structures whose streamlined gravity-defying shapes inspired one think to the future, while simultaneously ushering in some of the very first 'modern' service stations in Slovenia.\n\t\tEarly examples in the 1950s featured only modest floating roof sections off of the primary structure, but as the building technology progressed into the 1960s, expansive umbrella-like concrete mushrooms could constructed which fully sat on a single pillar, offering ideal protection and cover for the weather-conscious motorist. This floating cantilevered engineering pushed the boundaries of architectural design at that time in Slovenia, allowing architects to reassess the creative and innovative applications with which cantilevered concrete construction could be employed.\n\t\tPerhaps the most ambitious addition to the \"Petrol\" brand series of service stations in Ljubljana was a creation by Slovene architect Edvard Ravnikar, who is often considered the most famous and influential of all Yugoslav-era architects in Slovenia.\n\t\tBuilt literally right across the street from Mihelič's station at Tivolska 46 that was constructed two years earlier, Ravnikar's structure consists of three identical umbrella canopies created of a thin concrete facade. All three are interconnected, stretching out over nearly 60 meters, and are designed in a swooping space-age fashion that gives them an indelibly sleek impression of speed and motion.\n\t\tThis complex continues to operate into the present day as a \"Petrol\" brand service station, with the structure appearing almost exactly as it did when it was first unveiled in 1970. The architecture of this structure has become so iconic in Ljubljana that one architecture firm in the city named \"Multiplan\" has proposed a new service station concept to \"Petrol\" which is directly inspired by Ravnikar's design.",
+    "Architect":"Milan Mihelič, Edvard Ravnikar, Martin Živič",
+    "Year": "1953-1970",
     "Adress": "Tivolska 43",
     "Image_name_main": "image_carousel_petrol",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_petrol_1", "image_petrol_2", "image_petrol_3", "image_petrol_4"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.057924",
     "Lon" : " 14.504018"
@@ -137,7 +137,7 @@
     "Year": "1961",
     "Adress": "Between Linhartova, Savska, Topniška and Šmartinska Streets",
     "Image_name_main": "image_carousel_savsko_naselje",
-    "Image_names" : ["image_carousel_republic_square", "image_republic_square_1"],
+    "Image_names" : ["image_savsko_naselje_1", "image_savsko_naselje_2", "image_savsko_naselje_3", "image_savsko_naselje_4"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.065124",
     "Lon" : "14.520564"
@@ -150,7 +150,7 @@
     "Year": "1964",
     "Adress": "Trg komandanta Staneta Square",
     "Image_name_main": "image_carousel_sisenksa_soseska_6",
-    "Image_names" : ["image_carousel_republic_square"],
+    "Image_names" : ["image_sisenska_soseska_1", "image_sisenska_soseska_2", "image_sisenska_soseska_3", "image_sisenska_soseska_4", "image_sisenska_soseska_5", "image_sisenska_soseska_6"],
     "Image_name_sketch": "sketch_astra",
     "Lat" : "46.071091",
     "Lon" : "14.480415"
