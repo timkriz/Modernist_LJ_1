@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
         description_main.setText(models.get(0).getDescription_main());
         ImageView sketched_image = findViewById(R.id.main_window_photo_id);
         sketched_image.setImageResource(models.get(0).getImage_sketched());
+        sketched_image.setVisibility((getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) ? View.GONE : View.VISIBLE);
 
         /* BUTTON THAT OPENS DETAIL - GUMB NA DETAIL POGLED */
         Button open_rep_sq = (Button) findViewById(R.id.main_window_button_id);

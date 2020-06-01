@@ -47,7 +47,7 @@
     "Adress": "Prešernova cesta 10",
     "Image_name_main": "image_carousel_cankarjev",
     "Image_names" : ["image_cankarjev_dom_1", "image_cankarjev_dom_2", "image_cankarjev_dom_3", "image_cankarjev_dom_4", "image_cankarjev_dom_5"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_cankarjev",
     "Lat" : "46.049866",
     "Lon" : "14.499219"
   },
@@ -60,7 +60,7 @@
     "Adress": "Between Gregoričičeva, Rimska, Igriška and Slovenska Streets",
     "Image_name_main": "image_carousel_ferantovi_vrtovi",
     "Image_names" : ["image_ferant_1", "image_ferant_2", "image_ferant_3", "image_ferant_4", "image_ferant_5", "image_ferant_6"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_ferantovi",
     "Lat" : "46.048124",
     "Lon" : "14.501300"
   },
@@ -73,7 +73,7 @@
     "Adress": "Trg 7. kongresa ZKJ",
     "Image_name_main": "image_carousel_gospodarsko_raztavisce",
     "Image_names" : ["image_gospodarsko_razstavisce_1", "image_gospodarsko_razstavisce_2", "image_gospodarsko_razstavisce_3", "image_gospodarsko_razstavisce_4", "image_gospodarsko_razstavisce_5"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_gr",
     "Lat" : "46.061956",
     "Lon" : "14.508154"
   },
@@ -86,7 +86,7 @@
     "Adress": "Kopitarjeva ulica 2",
     "Image_name_main": "image_carousel_kanarcek",
     "Image_names" : ["image_kanarcek_1", "image_kanarcek_2", "image_kanarcek_3", "image_kanarcek_4", "image_kanarcek_5"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_kanarcek",
     "Lat" : "46.051224",
     "Lon" : "14.510872"
   },
@@ -99,7 +99,7 @@
     "Adress": "Ul. Bratov Učakar Street",
     "Image_name_main": "image_carousel_koseze",
     "Image_names" : ["image_koseze_1", "image_koseze_2", "image_koseze_3", "image_koseze_4", "image_koseze_5"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_koseze",
     "Lat" : "46.072100",
     "Lon" : "14.472844"
   },

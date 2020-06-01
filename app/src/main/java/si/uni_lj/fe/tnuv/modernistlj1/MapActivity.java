@@ -18,6 +18,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MapStyleOptions;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -144,6 +145,18 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     mGoogleMap.addMarker(new MarkerOptions().position(position).title(names_of_buildings[i])
                             .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
                 }
+
+                /* OPEN DETAIL ACTIVITY FROM MAP TITLE */
+                mGoogleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                    @Override
+                    public void onInfoWindowClick(Marker marker) {
+                        String name = marker.getTitle();
+                        Log.i("marker: ", String.valueOf(name));
+                        Intent intent_detail = new Intent(getApplicationContext(), DetailActivity.class);
+                        intent_detail.putExtra("name_of_building", name);
+                        startActivity(intent_detail);
+                    }
+                });
 
                 // Focus on position of building from detail view
 

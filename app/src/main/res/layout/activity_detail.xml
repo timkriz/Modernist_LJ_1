@@ -15,7 +15,7 @@
         app:layout_constraintHeight_percent="0.1"
         android:fontFamily="@font/proxima_regular"
         android:textColor="@color/colorText"
-        android:padding="20dp"
+        android:padding="5dp"
         android:textSize="40sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/cardView"
@@ -28,7 +28,7 @@
         app:cardCornerRadius="40dp"
         app:layout_constraintBottom_toTopOf="@id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHeight_percent="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_id"
         app:layout_constraintWidth_percent="0.9">
@@ -133,7 +133,8 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_percent="0.3"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:padding="10dp"/>
 
     <!-- Bottom navigation
     <com.google.android.material.bottomnavigation.BottomNavigationView
