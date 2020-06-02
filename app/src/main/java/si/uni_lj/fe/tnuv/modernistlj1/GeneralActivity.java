@@ -25,7 +25,7 @@ public class GeneralActivity extends AppCompatActivity {
         LinearLayoutManager horizontalLayoutManager
                 = new LinearLayoutManager(GeneralActivity.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(horizontalLayoutManager);
-        int num_of_arhitects = 5;  // needs fixing
+        int num_of_arhitects = 7;  // needs fixing
         ArrayList models = new ArrayList<>();
         for (int i = 0; i < num_of_arhitects; ++i) {
             int resId = getResources().getIdentifier("arhitect_" + i, "string", getPackageName());
