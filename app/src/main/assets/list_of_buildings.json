@@ -112,7 +112,7 @@
     "Adress": "Tomšičeva ulica 2",
     "Image_name_main": "image_carousel_nama",
     "Image_names" : ["image_nama_1", "image_nama_2", "image_nama_3"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_nama",
     "Lat" : "46.052128",
     "Lon" : "14.503112"
   },
@@ -125,7 +125,7 @@
     "Adress": "Tivolska 43",
     "Image_name_main": "image_carousel_petrol",
     "Image_names" : ["image_petrol_1", "image_petrol_2", "image_petrol_3", "image_petrol_4"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_petrol",
     "Lat" : "46.057924",
     "Lon" : " 14.504018"
   },
@@ -138,7 +138,7 @@
     "Adress": "Between Linhartova, Savska, Topniška and Šmartinska Streets",
     "Image_name_main": "image_carousel_savsko_naselje",
     "Image_names" : ["image_savsko_naselje_1", "image_savsko_naselje_2", "image_savsko_naselje_3", "image_savsko_naselje_4"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_savsko",
     "Lat" : "46.065124",
     "Lon" : "14.520564"
   },
@@ -151,7 +151,7 @@
     "Adress": "Trg komandanta Staneta Square",
     "Image_name_main": "image_carousel_sisenksa_soseska_6",
     "Image_names" : ["image_sisenska_soseska_1", "image_sisenska_soseska_2", "image_sisenska_soseska_3", "image_sisenska_soseska_4", "image_sisenska_soseska_5", "image_sisenska_soseska_6"],
-    "Image_name_sketch": "sketch_astra",
+    "Image_name_sketch": "sketch_sisenska",
     "Lat" : "46.071091",
     "Lon" : "14.480415"
   }

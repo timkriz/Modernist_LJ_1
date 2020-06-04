@@ -51,6 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:fontFamily="@font/proxima_bold"
+                android:elevation="15dp"
                 android:padding="10dp"
                 android:text="@string/more_text"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -78,15 +79,16 @@
     <!-- Main Window Image -->
     <ImageView
         android:id="@+id/main_window_photo_id"
-        android:layout_width="350dp"
-        android:layout_height="223dp"
+        android:layout_width="299dp"
+        android:layout_height="243dp"
         android:elevation="10dp"
+        android:padding="10dp"
+        android:scaleType="fitEnd"
         android:src="@drawable/sketch_tr"
         app:layout_constraintBottom_toTopOf="@+id/carousel_id"
-        app:layout_constraintVertical_bias="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/cardView"
-        android:scaleType="fitEnd"/>
+        app:layout_constraintVertical_bias="1" />
 
     <!-- Carousel-->
     <androidx.recyclerview.widget.RecyclerView

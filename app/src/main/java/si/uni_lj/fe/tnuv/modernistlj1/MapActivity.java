@@ -43,9 +43,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-        if (getIntent().hasExtra(getString(R.string.JSON_property_lat)) && getIntent().hasExtra(getString(R.string.JSON_property_lon))) {
-            focus_on_this_lat = getIntent().getExtras().getDouble(getString(R.string.JSON_property_lat));
-            focus_on_this_lon = getIntent().getExtras().getDouble(getString(R.string.JSON_property_lon));
+        if (getIntent().hasExtra("lon") && getIntent().hasExtra("lat")) {
+            focus_on_this_lat = getIntent().getExtras().getDouble("lat");
+            focus_on_this_lon = getIntent().getExtras().getDouble("lon");
         }
 
         /* GET LAT AND LON values from JSON */
