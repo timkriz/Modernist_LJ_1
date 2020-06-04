@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -29,7 +30,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
-    private static final String TAG = "ojej";
+    private String TAG = "Error";
     private double[] lat = new double[20];
     private double[] lon = new double[20];
     private double focus_on_this_lat = 0;
@@ -42,20 +43,18 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-        if (getIntent().hasExtra("lat") && getIntent().hasExtra("lon")) {
-            focus_on_this_lat = getIntent().getExtras().getDouble("lat");
-            focus_on_this_lon = getIntent().getExtras().getDouble("lon");
-
-            Log.i("focus_on_this_lat: ", String.valueOf(focus_on_this_lat));
+        if (getIntent().hasExtra(getString(R.string.JSON_property_lat)) && getIntent().hasExtra(getString(R.string.JSON_property_lon))) {
+            focus_on_this_lat = getIntent().getExtras().getDouble(getString(R.string.JSON_property_lat));
+            focus_on_this_lon = getIntent().getExtras().getDouble(getString(R.string.JSON_property_lon));
         }
 
         /* GET LAT AND LON values from JSON */
         try {
             JSONArray jArray = new JSONArray(readJSONFromAsset());
             for (int i = 0; i < jArray.length(); ++i) {
-                double read_lat = jArray.getJSONObject(i).getDouble("Lat"); // lat
-                double read_lon = jArray.getJSONObject(i).getDouble("Lon"); // lat
-                String read_name = jArray.getJSONObject(i).getString("Name"); // lat
+                double read_lat = jArray.getJSONObject(i).getDouble(getString(R.string.JSON_property_lat)); // lat
+                double read_lon = jArray.getJSONObject(i).getDouble(getString(R.string.JSON_property_lon)); // lat
+                String read_name = jArray.getJSONObject(i).getString(getString(R.string.JSON_property_name)); // lat
                 lat[i] = read_lat;
                 lon[i] = read_lon;
                 names_of_buildings[i] = read_name;
@@ -108,12 +107,12 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mgr.saveMapState(mGoogleMap);
         //Log.e("ERROR", "Map State has been saved");
     }
-    /** Called in onCreate when initializing map**/
+    /* Called in onCreate when initializing map*/
     public void initMap() {
         MapFragment map = (MapFragment) getFragmentManager().findFragmentById(R.id.mapFragmentID);
         map.getMapAsync(this);
     }
-    /** Called when map is ready to be used **/
+    /* Called when map is ready to be used */
     public void onMapReady(GoogleMap googleMap) {
         try {
             if (googleMap != null) {
@@ -127,9 +126,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
                     if (!success) {
                         Log.e(TAG, "Style parsing failed.");
+                        Toast.makeText(this, R.string.No_access_maps, Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
                     Log.e(TAG, "Can't find style. Error: ", e);
+                    Toast.makeText(this, R.string.No_access_maps, Toast.LENGTH_SHORT).show();
                 }
 
                 // Constrain the camera target to the Ljubljana bounds.
@@ -151,9 +152,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     @Override
                     public void onInfoWindowClick(Marker marker) {
                         String name = marker.getTitle();
-                        Log.i("marker: ", String.valueOf(name));
                         Intent intent_detail = new Intent(getApplicationContext(), DetailActivity.class);
-                        intent_detail.putExtra("name_of_building", name);
+                        intent_detail.putExtra(getString(R.string.key_name_of_building), name);
                         startActivity(intent_detail);
                     }
                 });
@@ -161,8 +161,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 // Focus on position of building from detail view
 
                 if (focus_on_this_lat !=0 && focus_on_this_lon !=0) {
-                    Log.i("bleh", String.valueOf(focus_on_this_lat));
-                    Log.i("bleh", String.valueOf(focus_on_this_lon));
                     mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(focus_on_this_lat,focus_on_this_lon), 17.0f));
                     focus_on_this_lat = 0;
                     focus_on_this_lat = 0;
@@ -182,6 +180,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         } catch (Exception e) {
             e.printStackTrace();
             Log.e("ERROR", "GOOGLE MAPS NOT LOADED");
+            Toast.makeText(this, R.string.No_access_maps, Toast.LENGTH_SHORT).show();
         }
     }
     /* READ JSON FILE IN ASSETS FOLDER */

@@ -9,11 +9,11 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+public class AdapterImages extends RecyclerView.Adapter<AdapterImages.ViewHolder> {
     private int[] mDataset; //list of image names
     private LayoutInflater mInflater;
 
-    MyAdapter(Context context, int[] mDataset) {
+    AdapterImages(Context context, int[] mDataset) {
         this.mInflater = LayoutInflater.from(context);
         this.mDataset = mDataset;
     }

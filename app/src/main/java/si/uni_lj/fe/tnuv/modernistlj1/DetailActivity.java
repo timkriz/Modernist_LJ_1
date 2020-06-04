@@ -1,19 +1,14 @@
 package si.uni_lj.fe.tnuv.modernistlj1;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,7 +16,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Objects;
 
 public class DetailActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -33,7 +27,7 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         /* BIND DATA TO LAYOUT - DOLOCI PODATKE V UI */
-        String name_of_building = getIntent().getExtras().getString("name_of_building");
+        String name_of_building = getIntent().getExtras().getString(getString(R.string.key_name_of_building));
         String read_detail_text = null;
         String arhitects_name = null;
         String year_built = null;
@@ -45,20 +39,20 @@ public class DetailActivity extends AppCompatActivity {
 
         /* GET DATA FROM JSON - dobi podatke iz jsona */
         try {
-            read_detail_text = objekt.getString("Description_detail");
-            arhitects_name = objekt.getString("Architect");
-            year_built = objekt.getString("Year");
-            image_names_json = objekt.getJSONArray("Image_names");
+            read_detail_text = objekt.getString(getString(R.string.JSON_property_description_detail));
+            arhitects_name = objekt.getString(getString(R.string.JSON_property_arhitect));
+            year_built = objekt.getString(getString(R.string.JSON_property_year));
+            image_names_json = objekt.getJSONArray(getString(R.string.JSON_property_image_names));
             images = new int[image_names_json.length()];
             for(int i = 0; i < image_names_json.length(); i++) {
                 String name_of_image = image_names_json.getString(i);
-                int resource_id_image = getResources().getIdentifier(name_of_image, "drawable", getPackageName()); // get resource id
+                int resource_id_image = getResources().getIdentifier(name_of_image, getString(R.string.drawable), getPackageName()); // get resource id
                 images[i] = resource_id_image;
             }
-            lat = objekt.getDouble("Lat");
-            lon = objekt.getDouble("Lon");
+            lat = objekt.getDouble(getString(R.string.JSON_property_lat));
+            lon = objekt.getDouble(getString(R.string.JSON_property_lon));
         } catch (JSONException e) {
-            Toast.makeText(this, "Unable to find info about " + name_of_building, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.No_access_about) + name_of_building, Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
         final TextView detailTitle = (TextView) findViewById(R.id.title_id);
@@ -76,7 +70,7 @@ public class DetailActivity extends AppCompatActivity {
         LinearLayoutManager horizontalLayoutManager
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(horizontalLayoutManager);
-        mAdapter = new MyAdapter(this, images);
+        mAdapter = new AdapterImages(this, images);
         recyclerView.setAdapter(mAdapter);
         //adapter = new AdapterCarouselDetail(this, image_names);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,  false){
@@ -145,19 +139,15 @@ public class DetailActivity extends AppCompatActivity {
             JSONObject searchObject = array.getJSONObject(0);
             for (int i = 0; i < array.length(); i++) {
                 JSONObject currObject = array.getJSONObject(i);
-                name_read = currObject.getString("Name");
+                name_read = currObject.getString(getString(R.string.JSON_property_name));
 
-                Log.e("BEREM", name_read);
-                Log.e("BEREM z", Name_to_Find);
                 if (name_read.equals(Name_to_Find)) {
-                    Log.e("nasel", Name_to_Find);
                     searchObject = currObject;
                 }
             }
             return searchObject;
         } catch (JSONException e) {
-            Toast.makeText(this, "Unable to find info about " + Name_to_Find, Toast.LENGTH_SHORT).show();
-            Log.e("Ne Najde", "pizda");
+            Toast.makeText(this, getString(R.string.No_access_about) + Name_to_Find, Toast.LENGTH_SHORT).show();
             e.printStackTrace();
             return null;
         }

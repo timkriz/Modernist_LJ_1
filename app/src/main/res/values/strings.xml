@@ -49,5 +49,26 @@
     <string name="year_built0">1976</string>
     <string name="more_text">MORE</string>
     <string name="visited_text">VISITED</string>
+    <string name="Pretext_Bool_">BOOL_</string>
+    <string name="String_string">string</string>
+    <string name="Bool_string">bool</string>
+    <string name="Checkbox_key">CHECKBOX_KEY_</string>
+    <string name="drawable">drawable</string>
+    <string name="key_name_of_building">name_of_building</string>
+
     <string name="JSON_file_name">list_of_buildings.json</string>
+    <string name="JSON_property_name">Name</string>
+    <string name="JSON_property_image_name_main">Image_name_main</string>
+    <string name="JSON_property_description_main">Description_main</string>
+    <string name="JSON_property_image_name_sketch">Image_name_sketch</string>
+    <string name="JSON_property_description_detail">Description_detail</string>
+    <string name="JSON_property_arhitect">Architect</string>
+    <string name="JSON_property_year">Year</string>
+    <string name="JSON_property_image_names">Image_names</string>
+    <string name="JSON_property_lat">Lat</string>
+    <string name="JSON_property_lon">Lon</string>
+
+    <string name="No_access">Unable to access information.</string>
+    <string name="No_access_about">\"Unable to find info about \"</string>
+    <string name="No_access_maps">Can\'t load maps!</string>
 </resources>

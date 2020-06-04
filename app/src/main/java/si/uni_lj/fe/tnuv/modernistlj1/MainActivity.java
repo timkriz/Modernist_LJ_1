@@ -42,17 +42,17 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
         try {
             JSONArray jArray = new JSONArray(readJSONFromAsset());
             for (int i = 0; i < jArray.length(); ++i) {
-                String name = jArray.getJSONObject(i).getString("Name"); // name
-                String image_file_name = jArray.getJSONObject(i).getString("Image_name_main"); // image_file_name
-                String description_main = jArray.getJSONObject(i).getString("Description_main");
-                int resource_id_image = getResources().getIdentifier(image_file_name, "drawable", getPackageName()); // get resource id
-                String sketched_image_file_name = jArray.getJSONObject(i).getString("Image_name_sketch"); // image_file_name
-                int resource_id_image_sketched = getResources().getIdentifier(sketched_image_file_name, "drawable", getPackageName()); // get resource id
+                String name = jArray.getJSONObject(i).getString(getString(R.string.JSON_property_name)); // name
+                String image_file_name = jArray.getJSONObject(i).getString(getString(R.string.JSON_property_image_name_main)); // image_file_name
+                String description_main = jArray.getJSONObject(i).getString(getString(R.string.JSON_property_description_main));
+                int resource_id_image = getResources().getIdentifier(image_file_name, getString(R.string.drawable), getPackageName()); // get resource id
+                String sketched_image_file_name = jArray.getJSONObject(i).getString(getString(R.string.JSON_property_image_name_sketch)); // image_file_name
+                int resource_id_image_sketched = getResources().getIdentifier(sketched_image_file_name, getString(R.string.drawable), getPackageName()); // get resource id
                 models.add(new ModelObject(i,name, description_main, resource_id_image, resource_id_image_sketched)); // pass id and name to ModelCarousel class
             }
         } catch (JSONException e) {
             e.printStackTrace();
-            Toast.makeText(this, "Unable to access information.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.No_access, Toast.LENGTH_SHORT).show();
         }
 
         /* MAIN WINDOW CARD - GLAVNO OKNO */
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
             }
         });
 
-        /** BOTTOM MENU - SPODNJI MENI **/
+        /* BOTTOM MENU - SPODNJI MENI */
         //Initialize and assign bottom navigation variable
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         //Set home selected
@@ -160,12 +160,12 @@ public class MainActivity extends AppCompatActivity implements AdapterCarousel.I
 
         final SharedPreferences sharedPrefs = getPreferences(Context.MODE_PRIVATE);
 
-        String pre_key = "CHECKBOX_KEY_" + position;
-        int resourceIdKey = getResources().getIdentifier(pre_key,"string", getPackageName());
+        String pre_key = getString(R.string.Checkbox_key) + position;
+        int resourceIdKey = getResources().getIdentifier(pre_key,getString(R.string.String_string), getPackageName());
         String key = getString(resourceIdKey);
 
-        String pre_bool = "BOOL_" + position;
-        int resourceIdBool = getResources().getIdentifier(pre_bool,"bool", getPackageName());
+        String pre_bool = getString(R.string.Pretext_Bool_) + position;
+        int resourceIdBool = getResources().getIdentifier(pre_bool,getString(R.string.Bool_string), getPackageName());
         boolean value = getResources().getBoolean(resourceIdBool);
 
         boolean is_it_checked = sharedPrefs.getBoolean(key, value);
